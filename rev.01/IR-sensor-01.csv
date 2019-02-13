@@ -1,0 +1,8 @@
+"ID";"Určovatel";"Pouzdro";"Množství";"Určení";"Tisk rohového razítka";
+1;"REF**,REF**";"Fiducial_1mm_Dia_2.54mm_Outer_CopperTop";2;"Fiducial_1mm_Dia_2.54mm_Outer_CopperTop";;;
+2;"R3,R2";"R_0603";2;"10k";;;
+3;"Q1";"SOT-23";1;"2N7002KT1G";;;
+4;"REF**";"MountingHole_2.2mm_M2";1;"MountingHole_2.2mm_M2";;;
+5;"U1";"IR-EE-SX1103";1;"EE-SX1103";;;
+6;"P1";"Pin_Header_Angled_1x03";1;"CONN_01X03";;;
+7;"R1";"R_0603";1;"330R";;;

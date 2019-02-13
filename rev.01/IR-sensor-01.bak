@@ -1,0 +1,143 @@
+EESchema Schematic File Version 4
+LIBS:IR-endstop-01-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "IR sensor"
+Date "2019-02-12"
+Rev "0.1"
+Comp "PRUSA RESEARCH s.r.o"
+Comment1 "#ok1hra"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L opto:LTV-817 U1
+U 1 1 5BD7084A
+P 4950 3975
+F 0 "U1" H 4950 4300 50  0000 C CNN
+F 1 "EE-SX1103" H 4950 4209 50  0000 C CNN
+F 2 "ok1hra:IR-EE-SX1103" H 4950 4208 50  0001 C CIN
+F 3 "" H 4950 4209 50  0001 C CNN
+	1    4950 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L conn:CONN_01X03 P1
+U 1 1 5BD70990
+P 7050 3575
+F 0 "P1" H 7128 3616 50  0000 L CNN
+F 1 "CONN_01X03" H 7128 3525 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 7050 3575 50  0001 C CNN
+F 3 "" H 7050 3575 50  0001 C CNN
+F 4 "" H 7050 3575 50  0001 C CNN "alternative"
+	1    7050 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5BD709E3
+P 4500 3875
+F 0 "R1" V 4350 3875 50  0000 C CNN
+F 1 "330R" V 4500 3875 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4430 3875 50  0001 C CNN
+F 3 "" H 4500 3875 50  0001 C CNN
+F 4 "0,1W/1%" V 4400 3875 28  0000 C CNN "req"
+	1    4500 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3875 5400 3875
+Wire Wire Line
+	5250 4075 5400 4075
+Wire Wire Line
+	5400 4075 5400 4325
+Wire Wire Line
+	5400 4325 4300 4325
+Wire Wire Line
+	4300 4325 4300 4075
+Wire Wire Line
+	4300 4075 4650 4075
+Wire Wire Line
+	4300 3475 4300 3875
+Wire Wire Line
+	4300 3875 4350 3875
+Text Notes 6700 3675 0    61   ~ 0
++5V\nOUT\nGND
+$Comp
+L device:R R2
+U 1 1 5BD6C176
+P 5400 3675
+F 0 "R2" V 5250 3675 50  0000 C CNN
+F 1 "10k" V 5400 3675 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5330 3675 50  0001 C CNN
+F 3 "" H 5400 3675 50  0001 C CNN
+F 4 "0,1W/1%" V 5300 3675 28  0000 C CNN "req"
+	1    5400 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3525 5400 3475
+Connection ~ 5400 3475
+Wire Wire Line
+	5400 3475 4300 3475
+Wire Wire Line
+	5400 3825 5400 3875
+Connection ~ 5400 3875
+Wire Wire Line
+	6025 4325 6025 4025
+Connection ~ 5400 4325
+Wire Wire Line
+	6025 4325 6575 4325
+Wire Wire Line
+	6575 4325 6575 3675
+Wire Wire Line
+	6575 3675 6850 3675
+Connection ~ 6025 4325
+Wire Wire Line
+	6850 3575 6025 3575
+Wire Wire Line
+	6025 3575 6025 3625
+$Comp
+L device:R R3
+U 1 1 5BE2C39F
+P 5750 3575
+F 0 "R3" V 5600 3575 50  0000 C CNN
+F 1 "10k" V 5750 3575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 5680 3575 50  0001 C CNN
+F 3 "" H 5750 3575 50  0001 C CNN
+F 4 "0,1W/1%" V 5650 3575 28  0000 C CNN "req"
+	1    5750 3575
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5900 3575 6025 3575
+Connection ~ 6025 3575
+Wire Wire Line
+	5600 3575 5500 3575
+Wire Wire Line
+	5500 3575 5500 3475
+Wire Wire Line
+	5500 3475 5400 3475
+$Comp
+L transistors:2N7002 Q1
+U 1 1 5BE32902
+P 5925 3825
+F 0 "Q1" H 6115 3871 50  0000 L CNN
+F 1 "2N7002KT1G" H 6115 3780 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6125 3750 50  0001 L CIN
+F 3 "" H 6116 3734 50  0001 L CNN
+	1    5925 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3875 5725 3875
+Wire Wire Line
+	5400 4325 6025 4325
+Wire Wire Line
+	6850 3475 5500 3475
+Connection ~ 5500 3475
+$EndSCHEMATC
