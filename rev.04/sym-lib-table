@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name IR-endstop-03-rescue)(type Legacy)(uri ${KIPRJMOD}/IR-endstop-03-rescue.lib)(options "")(descr ""))
+  (lib (name IR-endstop-03b-rescue)(type Legacy)(uri ${KIPRJMOD}/IR-endstop-03b-rescue.lib)(options "")(descr ""))
+  (lib (name IR-endstop-04-rescue)(type Legacy)(uri ${KIPRJMOD}/IR-endstop-04-rescue.lib)(options "")(descr ""))
+)
